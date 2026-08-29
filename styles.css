@@ -818,14 +818,33 @@ h1, h2, h3 {
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
+    body {
+        overflow-y: auto !important;
+    }
+    
+    .deck-container {
+        height: auto !important;
+        overflow-y: visible !important;
+        scroll-snap-type: none !important;
+        padding-top: 70px;
+    }
+
+    .slide {
+        height: auto !important;
+        min-height: 100vh;
+        scroll-snap-align: none !important;
+        padding: 50px 15px !important;
+        justify-content: flex-start; /* prevent centering overlap */
+    }
+
     .header-bar {
-        padding: 10px;
+        padding: 5px;
         height: auto;
         justify-content: center;
     }
 
     .header-contact {
-        display: none; /* Hide contact details to save header space */
+        display: none !important;
     }
 
     .header-logo {
@@ -833,42 +852,45 @@ h1, h2, h3 {
     }
 
     .logo-circle {
-        width: 35px;
-        height: 35px;
+        width: 32px;
+        height: 32px;
     }
 
     .main-logo-img {
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
     }
 
     .logo-text {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
-    .slide {
-        padding: 100px 20px 40px;
+    .content-wrapper h1.accent-text {
+        font-size: 2.4rem;
+        line-height: 1.1;
+        margin-bottom: 10px;
     }
 
-    .hero-content h1 {
-        font-size: 2.8rem;
-        margin-bottom: 20px;
+    .content-wrapper h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
     }
 
-    .hero-content p.tagline {
+    .content-wrapper p.tagline {
         font-size: 1.1rem;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 
     .founder-badge {
-        padding: 10px 20px;
+        padding: 10px 15px;
         flex-direction: column;
         text-align: center;
-        gap: 10px;
+        gap: 5px;
+        margin-top: 10px;
     }
 
     .slide-title h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .slide-title h3 {
@@ -895,7 +917,7 @@ h1, h2, h3 {
     }
 
     .indicators {
-        display: none;
+        display: none !important;
     }
 
     .modal-body {
@@ -903,10 +925,10 @@ h1, h2, h3 {
     }
 
     .modal-content {
-        padding: 30px;
+        padding: 20px;
     }
 
     .modal-info h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
