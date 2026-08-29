@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvarna Tours & Travels</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Header Bar -->
+    <header class="header-bar">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <img src="assets/images/logo.png" alt="Suvarna Tours Logo" class="main-logo-img">
+            </div>
+            <span class="logo-text">Suvarna Tours & Travels</span>
+        </div>
+        <div class="header-contact">
+            <span><i class="fas fa-phone"></i> 9970062618</span>
+            <span><i class="fas fa-envelope"></i> ranjeet.palande86@gmail.com</span>
+        </div>
+    </header>
+
+    <!-- Indicators -->
+    <div class="indicators">
+        <a href="#slide1" class="indicator active" id="ind-1"></a>
+        <a href="#slide2" class="indicator" id="ind-2"></a>
+        <a href="#slide3" class="indicator" id="ind-3"></a>
+        <a href="#slide4" class="indicator" id="ind-4"></a>
+        <a href="#slide5" class="indicator" id="ind-5"></a>
+        <a href="#slide6" class="indicator" id="ind-6"></a>
+        <a href="#slide7" class="indicator" id="ind-7"></a>
+    </div>
+
+    <div class="deck-container" id="deckContainer">
+        
+        <!-- SLIDE 1 -->
+        <section class="slide slide-1" id="slide1">
+            <div class="content-wrapper">
+                <h1 class="accent-text">Suvarna Tours & Travels</h1>
+                <h2>Exploring the India</h2>
+                <p class="tagline">
+                    We make travel easy, enjoyable, and memorable.<br>
+                    From planning your trip to reaching your destination, we ensure a smooth and hassle-free experience every step of the way.
+                </p>
+                
+                <div class="founder-badge" id="founderBadge" style="cursor: pointer;">
+                    <img src="assets/images/father_portrait_new.jpg" onerror="this.src='https://ui-avatars.com/api/?name=Ranjeet+Palande&background=d97706&color=fff'" alt="Founder">
+                    <div class="founder-details">
+                        <strong>Ranjeet Palande</strong>
+                        <span>Founder & Travel Agent</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 2 -->
+        <section class="slide slide-2" id="slide2">
+            <div class="slide-title">
+                <h2>Explore India With Us</h2>
+                <h3>All Over India Booking Available</h3>
+            </div>
+            
+            <div class="destinations-layout">
+                <div class="city-chips">
+                    <div class="city-chip"><i class="fas fa-om"></i> Varanasi</div>
+                    <div class="city-chip"><i class="fas fa-city"></i> Indore</div>
+                    <div class="city-chip"><i class="fas fa-fort-awesome"></i> Pune</div>
+                    <div class="city-chip"><i class="fas fa-monument"></i> Delhi</div>
+                    <div class="city-chip"><i class="fas fa-archway"></i> Mumbai</div>
+                </div>
+
+                <div class="image-cards">
+                    <div class="img-card">
+                        <img src="assets/images/card_taj_mahal.jpg" onerror="this.src='https://images.unsplash.com/photo-1564507592208-0176395b00cd?w=500&q=80'" alt="Agra">
+                        <div class="label">Agra (Taj Mahal)</div>
+                    </div>
+                    <div class="img-card">
+                        <img src="assets/images/card_kerala.jpg" onerror="this.src='https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=500&q=80'" alt="Kerala">
+                        <div class="label">Kerala Backwaters</div>
+                    </div>
+                    <div class="img-card">
+                        <img src="assets/images/card_jaipur.jpg" onerror="this.src='https://images.unsplash.com/photo-1477587458883-47145ed94245?w=500&q=80'" alt="Jaipur">
+                        <div class="label">Jaipur Palace</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3 -->
+        <section class="slide slide-3" id="slide3">
+            <div class="slide-3-layout">
+                <div class="about-section">
+                    <h2 class="accent-text">Who We Are</h2>
+                    <p>We are a passionate travel agency dedicated to turning your dream journeys into unforgettable experiences. Our expert team handles every detail.</p>
+                    
+                    <div class="services-list">
+                        <div class="service-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>All-India Tour Packages</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-plane-departure"></i>
+                            <span>Flight & Train Bookings</span>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-hotel"></i>
+                            <span>Premium Hotel Reservations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <h3>Ready to travel?</h3>
+                    <p>Contact us today to start planning your perfect itinerary.</p>
+                    <button class="booking-btn" onclick="document.getElementById('slide7').scrollIntoView({behavior: 'smooth'})"><i class="fas fa-paper-plane"></i> Book Now</button>
+                    <div style="margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                        <p style="margin-bottom: 10px;"><i class="fas fa-phone"></i> 9970062618</p>
+                        <p style="margin-bottom: 10px;"><i class="fas fa-envelope"></i> ranjeet.palande86@gmail.com</p>
+                        <p style="line-height: 1.5;"><i class="fas fa-map-marker-alt"></i> Shop No.1, ABC Nirmal Society, Opp. McDonald's, Gujar Nagar, Thergaon, Pune - 33</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Testimonials -->
+        <section class="slide slide-4" id="slide4">
+            <div class="slide-title">
+                <h2>What Our Travelers Say</h2>
+                <h3>Real Experiences, Real Memories</h3>
+            </div>
+            
+            <div class="testimonials-layout">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Suvarna Tours organized the most amazing trip to Kerala for our family. Everything from the hotel to the houseboat was perfect!"</p>
+                    <div class="client-info">
+                        <strong>Amit Sharma</strong>
+                        <span>Family Trip</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Ranjeet goes above and beyond. We had a last-minute flight cancellation and he sorted it out instantly. Highly recommended."</p>
+                    <div class="client-info">
+                        <strong>Neha Desai</strong>
+                        <span>Corporate Travel</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"The Rajasthan tour package was exceptional. Great local guides and fantastic hotel selections. A truly premium experience."</p>
+                    <div class="client-info">
+                        <strong>Vikram Singh</strong>
+                        <span>Cultural Tour</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Gallery -->
+        <section class="slide slide-5" id="slide5">
+            <div class="slide-title">
+                <h2>Moments of Joy</h2>
+                <h3>Glimpses From Our Past Tours</h3>
+            </div>
+            
+            <div class="gallery-layout">
+                <div class="gallery-img g-img-1"><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80" alt="India Tour"></div>
+                <div class="gallery-img g-img-2"><img src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=600&q=80" alt="India Tour"></div>
+                <div class="gallery-img g-img-3"><img src="https://images.unsplash.com/photo-1598890777032-bde835ba27c2?w=600&q=80" alt="India Tour"></div>
+                <div class="gallery-img g-img-4"><img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&q=80" alt="India Tour"></div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: Why Choose Us -->
+        <section class="slide slide-6" id="slide6">
+            <div class="slide-title">
+                <h2>Why Choose Suvarna Tours?</h2>
+                <h3>Our Core Values</h3>
+            </div>
+            
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <i class="fas fa-medal"></i>
+                    <h4>20 Years Legacy</h4>
+                    <p>Two decades of trusted service and thousands of happy travelers.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>24/7 Support</h4>
+                    <p>We are always just a call away, ensuring complete peace of mind during your trip.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Expert Guides</h4>
+                    <p>Knowledgeable local guides who bring history and culture to life.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-file-signature"></i>
+                    <h4>Hassle-Free Process</h4>
+                    <p>From visa assistance to ticketing, we handle all the tedious paperwork for you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: Booking Form -->
+        <section class="slide slide-7" id="slide7">
+            <div class="slide-title">
+                <h2>Plan Your Journey</h2>
+                <h3>Fill out the form below to get started</h3>
+            </div>
+            
+            <div class="booking-form-container">
+                <form class="journey-form" action="https://formspree.io/f/myegpyyz" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="Full Name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="number" name="Age" placeholder="Enter your age" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" name="Phone Number" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="Email Address" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Departure City</label>
+                            <input type="text" name="Departure City" placeholder="Where are you leaving from?" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Arrival Destination</label>
+                            <input type="text" name="Arrival Destination" placeholder="Where are you going?" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Travel Date</label>
+                            <input type="date" name="Travel Date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Mode of Travel</label>
+                            <select name="Transport Mode" required>
+                                <option value="" disabled selected>Select transport...</option>
+                                <option value="Flight">Flight</option>
+                                <option value="Train">Train</option>
+                                <option value="Bus">Bus / Coach</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Additional Notes / Special Requirements</label>
+                        <textarea name="Additional Notes" rows="3" placeholder="Tell us more about your travel plans..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Submit Inquiry</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Founder Info Modal -->
+    <div class="modal-overlay" id="founderModal">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="assets/images/father_portrait_new.jpg" onerror="this.src='https://ui-avatars.com/api/?name=Ranjeet+Palande&background=d97706&color=fff'" alt="Ranjeet Palande - Founder">
+                </div>
+                <div class="modal-info">
+                    <h2 class="accent-text">Ranjeet Palande</h2>
+                    <h3>Founder & Chief Travel Director</h3>
+                    <p><strong>A Legacy of 20 Years in Travel</strong></p>
+                    <p>With over two decades of dedicated experience in the tourism industry, Ranjeet Palande has built Suvarna Tours & Travels on the foundational pillars of trust, reliability, and unparalleled customer service.</p>
+                    <p>His deep knowledge of India's diverse landscapes and rich cultural heritage ensures that every itinerary is crafted not just as a trip, but as a memorable life experience. Ranjeet is deeply passionate about delivering seamless travel solutions—from meticulous flight bookings to luxurious stays—treating every client like family.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script to update indicators on scroll -->
+    <script>
+        const container = document.getElementById('deckContainer');
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+
+        container.addEventListener('scroll', () => {
+            let index = Math.round(container.scrollTop / window.innerHeight);
+            if (index < 0) index = 0;
+            if (index >= indicators.length) index = indicators.length - 1;
+
+            indicators.forEach(ind => ind.classList.remove('active'));
+            indicators[index].classList.add('active');
+        });
+
+        // Founder Modal Logic
+        const founderBadge = document.getElementById('founderBadge');
+        const founderModal = document.getElementById('founderModal');
+        const closeBtn = document.querySelector('.close-modal');
+
+        founderBadge.addEventListener('click', () => {
+            founderModal.style.display = 'flex';
+            // Slight delay to allow display block to apply before opacity transition
+            setTimeout(() => {
+                founderModal.classList.add('show');
+            }, 10);
+        });
+
+        const closeModal = () => {
+            founderModal.classList.remove('show');
+            setTimeout(() => {
+                founderModal.style.display = 'none';
+            }, 300); // match transition time
+        };
+
+        closeBtn.addEventListener('click', closeModal);
+        founderModal.addEventListener('click', (e) => {
+            if(e.target === founderModal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
