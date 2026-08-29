@@ -815,3 +815,98 @@ h1, h2, h3 {
 .slide-7 {
     background: linear-gradient(rgba(250, 248, 242, 0.70), rgba(250, 248, 242, 0.70)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&q=80') center/cover no-repeat;
 }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .header-bar {
+        padding: 10px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .header-contact {
+        display: none; /* Hide contact details to save header space */
+    }
+
+    .header-logo {
+        gap: 2px;
+    }
+
+    .logo-circle {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main-logo-img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .logo-text {
+        font-size: 0.75rem;
+    }
+
+    .slide {
+        padding: 100px 20px 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p.tagline {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .founder-badge {
+        padding: 10px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .slide-title h2 {
+        font-size: 2.2rem;
+    }
+
+    .slide-title h3 {
+        font-size: 1.1rem;
+    }
+
+    .slide-3-layout, .testimonials-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image-cards {
+        flex-direction: column;
+    }
+
+    .gallery-layout, .why-us-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .indicators {
+        display: none;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-content {
+        padding: 30px;
+    }
+
+    .modal-info h2 {
+        font-size: 2rem;
+    }
+}
